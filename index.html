@@ -2,52 +2,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="JS/angular.min.js"></script>
-        <script src="JS/Angular_JS.js"></script>  
         <link rel="stylesheet" href="CSS/bootstrap.css">
     </head>
 <body>
     <div ng-app="app" class="container">
         <div ng-controller="MyController">
             
-            <h1>Table Practice</h1>
-
-
-            <table class="table table-dark">
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>City</th>
-                    <th>Branch</th>
-                    <th>Sem</th>
-                    <th>Button</th>
-                </tr>
-                <tr>
-                    <td><input type="text" class="form-control input-sm" ng-model="in_Id" id="in_Id" placeholder="Enter ID"></td>
-                    <td><input type="text" class="form-control input-sm" ng-model="in_Name" id="in_Name" placeholder="Enter Name"></td>
-                    <td><input type="text" class="form-control input-sm" ng-model="in_City" id="in_City" placeholder="Enter City"></td>
-                    <td><input type="text" class="form-control input-sm" ng-model="in_Branch" id="in_Branch" placeholder="Enter Branch"></td>
-                    <td><input type="text" class="form-control input-sm" ng-model="in_Sem" id="in_Sem" placeholder="Enter Sem"></td>
-                    <td><button ng-click='addRow()' class="btn btn-primary">Add Data</button><br></td>
-                </tr>
-                <tr>
-                    <td>{{in_Id}}</td>
-                    <td>{{in_Name}}</td>
-                    <td>{{in_City}}</td>
-                    <td>{{in_Branch}}</td>
-                    <td>{{in_Sem}}</td>
-                    <td>:: In Data</td>
-                </tr>
-                <tr ng-repeat="val in rows track by $index">
-                    <td>{{val.in_Id}}</td>
-                    <td>{{val.in_Name}}</td>
-                    <td>{{val.in_City}}</td>
-                    <td>{{val.in_Branch}}</td>
-                    <td>{{val.in_Sem}}</td>
-                    <td><button ng-click='RowDelete(val)' class="btn btn-danger">Delete</button><br></td>
-                </tr>
-            </table><br>
         </div>
     </div>  
+
+    <script src="JS/angular.min.js"></script>
+    <script src="JS/Angular_JS.js"></script> 
 </body>  
 </html> 
